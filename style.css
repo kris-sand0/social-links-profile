@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+body {
+  background-color: hsl(0, 0%, 8%);
+  font-family: "Inter", sans-serif;
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card {
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 12px;
+  padding: 40px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 380px;
+  box-sizing: border-box;
+}
+
+.profile-image img {
+  border-radius: 50%;
+  width: 88px;
+  height: 88px;
+  margin-bottom: 24px;
+}
+
+.profile-info {
+  text-align: center;
+}
+
+.profile-info h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+
+/* Seleciona o primeiro parágrafo (localização) */
+.profile-info h1 + p {
+  color: hsl(75, 94%, 57%);
+  font-weight: 700;
+  margin: 0 0 24px 0;
+}
+
+/* Seleciona o segundo parágrafo (bio) */
+.profile-info p:last-of-type {
+  margin: 0 0 24px 0;
+  font-weight: 400;
+}
+
+.social-links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Espaço entre os links */
+}
+
+.social-links a {
+  background-color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 100%);
+  padding: 16px;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 12%);
+  outline: none; /* Remove a borda de foco padrão para usar a nossa */
+}
+
+.attribution {
+  text-align: center;
+  margin-top: 20px; /* Adiciona um espaço acima da atribuição */
+  padding-bottom: 20px; /* Adiciona um padding na parte inferior */
+}
